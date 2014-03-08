@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ImageViewController.h"
 
-@interface PageViewViewController : UIViewController
+@interface PageViewViewController : UIViewController <UIPageViewControllerDataSource, UIPageViewControllerDelegate,ImageViewControllerDelegate>
+
+@property (nonatomic, strong) UIPageViewController *pageVC;
+@property (nonatomic, strong) UIPageControl *pageControl;
 
 @end
