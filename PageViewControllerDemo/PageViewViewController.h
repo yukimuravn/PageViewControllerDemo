@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ImageViewController.h"
+#import "MainViewController.h"
 
 @interface PageViewViewController : UIViewController <UIPageViewControllerDataSource, UIPageViewControllerDelegate,ImageViewControllerDelegate>
 

@@ -24,6 +24,8 @@
 		1A8B90F018CA0EC600FF9116 /* PageViewControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B90EF18CA0EC600FF9116 /* PageViewControllerDemoTests.m */; };
 		1A8B90FC18CA12C100FF9116 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B90FA18CA12C100FF9116 /* ImageViewController.m */; };
 		1A8B90FD18CA12C100FF9116 /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A8B90FB18CA12C100FF9116 /* ImageViewController.xib */; };
+		1ADD36DA18CC3151007566B7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADD36D818CC3151007566B7 /* MainViewController.m */; };
+		1ADD36DB18CC3151007566B7 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ADD36D918CC3151007566B7 /* MainViewController.xib */; };
 		1AE8E07B18CA288D00566DD7 /* img1@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8E07618CA288D00566DD7 /* img1@2x~iphone.png */; };
 		1AE8E07C18CA288D00566DD7 /* img2@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8E07718CA288D00566DD7 /* img2@2x~iphone.png */; };
 		1AE8E07D18CA288D00566DD7 /* img3@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8E07818CA288D00566DD7 /* img3@2x~iphone.png */; };
@@ -65,6 +67,9 @@
 		1A8B90F918CA12C100FF9116 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		1A8B90FA18CA12C100FF9116 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		1A8B90FB18CA12C100FF9116 /* ImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
+		1ADD36D718CC3151007566B7 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		1ADD36D818CC3151007566B7 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		1ADD36D918CC3151007566B7 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		1AE8E07618CA288D00566DD7 /* img1@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "img1@2x~iphone.png"; path = "img/img1@2x~iphone.png"; sourceTree = "<group>"; };
 		1AE8E07718CA288D00566DD7 /* img2@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "img2@2x~iphone.png"; path = "img/img2@2x~iphone.png"; sourceTree = "<group>"; };
 		1AE8E07818CA288D00566DD7 /* img3@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "img3@2x~iphone.png"; path = "img/img3@2x~iphone.png"; sourceTree = "<group>"; };
@@ -140,6 +145,9 @@
 				1A8B90F918CA12C100FF9116 /* ImageViewController.h */,
 				1A8B90FA18CA12C100FF9116 /* ImageViewController.m */,
 				1A8B90FB18CA12C100FF9116 /* ImageViewController.xib */,
+				1ADD36D718CC3151007566B7 /* MainViewController.h */,
+				1ADD36D818CC3151007566B7 /* MainViewController.m */,
+				1ADD36D918CC3151007566B7 /* MainViewController.xib */,
 			);
 			path = PageViewControllerDemo;
 			sourceTree = "<group>";
@@ -268,6 +276,7 @@
 				1AE8E07B18CA288D00566DD7 /* img1@2x~iphone.png in Resources */,
 				1A8B90CF18CA0EC600FF9116 /* InfoPlist.strings in Resources */,
 				1A8B90FD18CA12C100FF9116 /* ImageViewController.xib in Resources */,
+				1ADD36DB18CC3151007566B7 /* MainViewController.xib in Resources */,
 				1A8B90D818CA0EC600FF9116 /* Main.storyboard in Resources */,
 				1AE8E07C18CA288D00566DD7 /* img2@2x~iphone.png in Resources */,
 				1AE8E07D18CA288D00566DD7 /* img3@2x~iphone.png in Resources */,
@@ -294,6 +303,7 @@
 				1A8B90D518CA0EC600FF9116 /* PageViewAppDelegate.m in Sources */,
 				1A8B90D118CA0EC600FF9116 /* main.m in Sources */,
 				1A8B90FC18CA12C100FF9116 /* ImageViewController.m in Sources */,
+				1ADD36DA18CC3151007566B7 /* MainViewController.m in Sources */,
 				1A8B90DB18CA0EC600FF9116 /* PageViewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

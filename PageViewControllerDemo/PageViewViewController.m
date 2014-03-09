@@ -27,7 +27,6 @@
     if (!self.pageVC) {
         self.pageVC = [[UIPageViewController alloc]initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
         [self.pageVC.view setBackgroundColor:[UIColor lightGrayColor]];
-//        NSLog(@"self.view = %@", NSStringFromCGRect(self.view.bounds));
         [self.pageVC.view setFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
         self.pageVC.delegate = self;
         self.pageVC.dataSource = self;
@@ -70,6 +69,7 @@
     if (index == 0) {
         imgVC_Index.delegate = self;
     }
+    
     return imgVC_Index;
 }
 
@@ -81,10 +81,38 @@
 
 - (void)dismissImageViewController:(UIButton *)button
 {
-    for (UIView *view in [self.view subviews])
-    {
-        [view removeFromSuperview];
-    }
+    [self.pageVC.view removeFromSuperview];
+    
+    //Zoom out Animation
+//    MainViewController *mainVC = [[MainViewController alloc]initWithNibName:@"MainViewController" bundle:nil];
+//    [mainVC.view setFrame:CGRectMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2, 0, 0)];
+//    [self.view addSubview:mainVC.view];
+//    [UIView beginAnimations:@"Zoom" context:nil];
+//    [UIView setAnimationDuration:1.0f];
+//    [mainVC.view setFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
+//    [UIView commitAnimations];
+    
+    //Fade Animation
+    MainViewController *mainVC = [[MainViewController alloc]initWithNibName:@"MainViewController" bundle:nil];
+    [mainVC.view setFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
+    [mainVC.view setAlpha:0.0f];
+    [self.view addSubview:mainVC.view];
+    [UIView beginAnimations:@"Fade" context:nil];
+    [UIView setAnimationDuration:1.5f];
+    [mainVC.view setAlpha:1.0f];
+    [UIView commitAnimations];
+    
+//    [UIView animateWithDuration:2.0f
+//                          delay:0.5
+//                        options: UIViewAnimationOptionCurveLinear
+//                     animations:^{
+//                         MainViewController *mainVC = [[MainViewController alloc]initWithNibName:@"MainViewController" bundle:nil];
+//                         [mainVC.view setFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
+//                         [self.view addSubview:mainVC.view];
+//                     }
+//                     completion:^(BOOL finished){
+//                         NSLog(@"Animation Done!");
+//                     }];
 }
 
 #pragma mark - UIPageViewController Delegate
